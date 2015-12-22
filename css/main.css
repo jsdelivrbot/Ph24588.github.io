@@ -76,6 +76,13 @@ h1 {
     }
 }
 
+@media (max-width: 630px) {
+    .project {
+        width:400px;
+        height:auto;
+    }
+}
+
 @media (max-width: 730px) {
     .bgc {
     margin: 0em;
