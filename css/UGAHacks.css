@@ -21,31 +21,13 @@ h1 {
 }
 
 .project {
-    background: url(file:///Users/user/Desktop/Ph24588.github.io/images/ugahacksbanner1.png) no-repeat center center;
+    background: url("images/ugahacksbannerblur.png") no-repeat center center;
 	background-size: cover; 
     width: 100%;
     height: 100%;
     margin: 0 auto;
 }
-
-@media (max-width: 1120px) {
-    .project {
-        background: url(file:///Users/user/Desktop/Ph24588.github.io/images/ugahacksbanner1.png) no-repeat center center;
-		background-size: cover;
-        width:100%;
-        height:100%;
-    }
-}
-
-@media (max-width: 930px) {
-    .project {
-        background: url(file:///Users/user/Desktop/Ph24588.github.io/images/ugahacksbanner1.png) no-repeat center center;
-		background-size: cover;
-        width:100%;
-        height:100%;
-    }
-}
-
+    
 @media (max-width: 730px) {
     .bgc {
     margin: -2em;
