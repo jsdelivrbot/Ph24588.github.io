@@ -79,6 +79,12 @@ h1 {
 }
 }
 
+@media (max-width: 730px) {
+    .bioa{
+    margin: 0em;
+}
+}
+
 .biob {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.15em;
@@ -90,6 +96,12 @@ h1 {
 	width: 100%;
     line-height: 2em;
     background: #f1f1f1;
+}
+
+@media (max-width: 730px) {
+    .biob {
+    margin: 0em;
+}
 }
 
 .bioc {
@@ -127,6 +139,12 @@ h1 {
     text-align: left;
 	width: 100%;
     line-height: 1.5em;
+}
+
+@media (max-width: 730px) {
+    .bio {
+    margin: 0em;
+}
 }
 
 .greytext {
