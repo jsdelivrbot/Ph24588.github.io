@@ -113,7 +113,8 @@ h1 {
 
 @media (max-width: 730px) {
     .center{
-    margin: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 }
 
@@ -122,10 +123,14 @@ h1 {
     font-size: 1em;
     position: relative;
     display: block;
-    padding: 80px 0px 75px 0px;
+    padding: 0px 0px 75px 0px;
     text-align: left;
 	width: 100%;
     line-height: 1.5em;
+}
+
+.largeimagepadding {
+    padding-top: 80px;
 }
 
 .greytext {
@@ -173,4 +178,11 @@ h2 {
 h4 {
     font-size: 3em;
     line-height: 1.25em;
+}
+
+@media (max-width: 730px) {
+    h4 {
+    font-size: 1.5em;
+    line-height: 1.75em;
+}
 }
