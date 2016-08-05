@@ -3,7 +3,12 @@
 }
 
 a {
-    text-decoration: none;
+    color: #D4489A;
+    text-decoration-line: underline;
+}
+
+a:hover {
+    color: #C447C4;
 }
 
 h1 {
@@ -21,7 +26,7 @@ h1 {
 }
 
 .project {
-    background: url("images/ugahacksbannerblur.png") no-repeat center center;
+    background: url("images/AgioImg1.png") no-repeat center center;
 	background-size: cover; 
     width: 100%;
     height: 100%;
@@ -185,4 +190,13 @@ h4 {
     font-size: 1.5em;
     line-height: 1.75em;
 }
+}
+
+ul {
+    display: inline-block;
+}
+
+.test {
+    float: left;
+    padding-right: 35px;
 }
