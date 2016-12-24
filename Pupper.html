@@ -99,16 +99,12 @@ How a user rents a dog</ul>
 ...which turned into flows.
 </div></div>
             
-<img class="project" src="css/images/amimg6.png">
-        
-<div class="bio largeimagepadding"><div class="center"><h3>Flows and sitemaps</h3>These user flows follow my personas’ decisions through the app to rent a dog. I wanted Pupper to be as straight forward as possible so you could rent a dog asap. Because of this, my user flows are similar to my site map because most of the screens you need to navigate to are the only ones available. This reduces clutter and makes for a streamlined process.</div></div>
-
 <!-- Start of Carousel -->
 <div class="gallery items-3">  
     
-<img class="project slides" src="css/images/pupperimg4-01.jpg">
-<img class="project slides" src="css/images/pupperimg4-02.jpg">
-<img class="project slides" src="css/images/pupperimg4-03.jpg">
+<img class="project slides" src="css/images/pupperimg3-01.png">
+<img class="project slides" src="css/images/pupperimg3-02.png">
+<img class="project slides" src="css/images/pupperimg3-03.png">
 
 <div class="controls left">
     <a class="control-button" onclick="plusDivs(-1)">&#10094;</a>
@@ -116,8 +112,7 @@ How a user rents a dog</ul>
     
 <div class="controls right">
     <a class="control-button" onclick="plusDivs(1)">&#10095;</a>
-</div>
-    
+</div>  
 </div>
 
 <script>
@@ -139,15 +134,10 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 </script>
-<!-- End of Carousel --> 
+<!-- End of Carousel -->
         
-<div class="bio largeimagepadding"><div class="center"><h3>Finding the dog you want</h3>With my groundwork done, I started sketching out solutions for the dog rentals. I included the breed, cost, and name in each dog entry. To easily display this information, I went with a cell view for bites sized entries.
-<br><br/>
-Out of the three things I emphasized, the name sticks out like a sore thumb. Why would I emphasize something that wouldn’t really affect the dog’s quality? After all, the name is a bit arbitrary. Well, earlier I mentioned that “dog rentals” looked kinda sketchy. I didn’t want dogs to be objects, but individuals. To do this, I highly emphasized the name and the personality of each dog. 
-    <br><br/>
-    <h3>Who is this Dog?</h3>When you read into the details of a dog, you will see a few things: name, breed, cost, description, and three key characteristics: age group, activity level, and temperament. The filtering system is based off of these characteristics. These factors will be the differentiator between dogs.
-</div></div>
-        
+<div class="bio largeimagepadding"><div class="center"><h3>Flows and sitemaps</h3>These user flows follow my personas’ decisions through the app to rent a dog. I wanted Pupper to be as straight forward as possible so you could rent a dog asap. Because of this, my user flows are similar to my site map because most of the screens you need to navigate to are the only ones available. This reduces clutter and makes for a streamlined process.</div></div>
+
 <!-- Start of Carousel -->
 <div class="gallery items-3">  
     
@@ -186,6 +176,52 @@ function showDivs2(n) {
 </script>
 <!-- End of Carousel --> 
         
+<div class="bio largeimagepadding"><div class="center"><h3>Finding the dog you want</h3>With my groundwork done, I started sketching out solutions for the dog rentals. I included the breed, cost, and name in each dog entry. To easily display this information, I went with a cell view for bites sized entries.
+<br><br/>
+Out of the three things I emphasized, the name sticks out like a sore thumb. Why would I emphasize something that wouldn’t really affect the dog’s quality? After all, the name is a bit arbitrary. Well, earlier I mentioned that “dog rentals” looked kinda sketchy. I didn’t want dogs to be objects, but individuals. To do this, I highly emphasized the name and the personality of each dog. 
+    <br><br/>
+    <h3>Who is this Dog?</h3>When you read into the details of a dog, you will see a few things: name, breed, cost, description, and three key characteristics: age group, activity level, and temperament. The filtering system is based off of these characteristics. These factors will be the differentiator between dogs.
+</div></div>
+        
+<!-- Start of Carousel -->
+<div class="gallery items-3">  
+    
+<img class="project slides3" src="css/images/pupperimg5-01.png">
+<img class="project slides3" src="css/images/pupperimg5-02.png">
+<img class="project slides3" src="css/images/pupperimg5-03.png">
+<img class="project slides3" src="css/images/pupperimg5-04.png">
+<img class="project slides3" src="css/images/pupperimg5-05.png">
+    
+<div class="controls left">
+    <a class="control-button" onclick="plusDivs3(-1)">&#10094;</a>
+</div>
+    
+<div class="controls right">
+    <a class="control-button" onclick="plusDivs3(1)">&#10095;</a>
+</div>  
+</div>
+
+<script>
+var slideIndex3 = 1;
+showDivs3(slideIndex3);
+
+function plusDivs3(n) {
+  showDivs3(slideIndex3 += n);
+}
+
+function showDivs3(n) {
+  var i;
+  var x = document.getElementsByClassName("slides3");
+  if (n > x.length) {slideIndex3 = 1}    
+  if (n < 1) {slideIndex3 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex3-1].style.display = "block";  
+}
+</script>
+<!-- End of Carousel -->
+        
 <div class="bio largeimagepadding"><div class="center"><h3>Shifiting wireframes</h3>My designs changed when transitioning into the wireframes (with more changes when transitioning to hifis), which was expected. A few notable changes from sketches to wires was filters, settings, date picking, and the layout of the details page. 
     <br><br/>
 My initial design had a filter bar that you could flip through dog characteristic with. However, doing this created clutter and left no room for breed filtering. A separate filters page looked liked the best answer, which you’ll see in the hifis. 
@@ -193,7 +229,42 @@ My initial design had a filter bar that you could flip through dog characteristi
 The details page consists of 3 parts: dog information, date picker, and the ‘add to kennel’ button. The challenge here was properly compartmentalizing sections into groups of action. For example, descriptors would be grouped, then the calendar would be grouped separately, and so on. Each group would have information accompanied by icons (i.e. age groups, would have icons of dogs and the calendar would have the days). Before I fell too deep into the rabbit hole, I realized the grouping approach was too cluttering. I shifted my thinking into creating hierarchy for the content, leading to my current design. This relies more on typography and whitespace, making for a cleaner interface. 
 </div></div>
         
-<img class="project" src="css/images/amimg6.png">
+<!-- Start of Carousel -->
+<div class="gallery items-3">  
+    
+<img class="project slides4" src="css/images/pupperimg6-01.png">
+<img class="project slides4" src="css/images/pupperimg6-02.png">
+<img class="project slides4" src="css/images/pupperimg6-03.png">
+    
+<div class="controls left">
+    <a class="control-button" onclick="plusDivs4(-1)">&#10094;</a>
+</div>
+    
+<div class="controls right">
+    <a class="control-button" onclick="plusDivs4(1)">&#10095;</a>
+</div>  
+</div>
+
+<script>
+var slideIndex4 = 1;
+showDivs4(slideIndex4);
+
+function plusDivs4(n) {
+  showDivs4(slideIndex4 += n);
+}
+
+function showDivs4(n) {
+  var i;
+  var x = document.getElementsByClassName("slides4");
+  if (n > x.length) {slideIndex4 = 1}    
+  if (n < 1) {slideIndex4 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex4-1].style.display = "block";  
+}
+</script>
+<!-- End of Carousel -->
         
 <div class="bio largeimagepadding"><div class="center"><h3>Look and feel</h3>I had to decide the look and feel of this app based off of the renter. Another message I wanted to convey with my interface was that each dog was a new adventure. That with your new friend, you could embark (pun intended) on a journey. To do this, I went with a “granola”, wanderlust aesthetic that would appeal to a younger audience. I also made sure that each dog looked just as excited as a user might be renting the dog. I wanted to emphasize imagery, white space, and typography throughout the UI. 
 
