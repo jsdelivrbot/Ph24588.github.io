@@ -2,12 +2,10 @@
   color: #D4489A;
   color: rgba(212, 72, 154, 0.4);
 }
-
 .gallery .control-button:hover {
   color: #D4489A;
   color: rgba(212, 72, 154, 0.8);
 }
-
 .gallery {
   position: relative;
 }

@@ -151,37 +151,37 @@ Out of the three things I emphasized, the name sticks out like a sore thumb. Why
 <!-- Start of Carousel -->
 <div class="gallery items-3">  
     
-<img class="project slidestwo" src="css/images/pupperimg4-01.jpg">
-<img class="project slidestwo" src="css/images/pupperimg4-02.jpg">
-<img class="project slidestwo" src="css/images/pupperimg4-03.jpg">
+<img class="project slides2" src="css/images/pupperimg4-01.jpg">
+<img class="project slides2" src="css/images/pupperimg4-02.jpg">
+<img class="project slides2" src="css/images/pupperimg4-03.jpg">
 
 <div class="controls left">
-    <a class="control-button" onclick="plusDivs(-1)">&#10094;</a>
+    <a class="control-button" onclick="plusDivs2(-1)">&#10094;</a>
 </div>
     
 <div class="controls right">
-    <a class="control-button" onclick="plusDivs(1)">&#10095;</a>
+    <a class="control-button" onclick="plusDivs2(1)">&#10095;</a>
 </div>
     
 </div>
 
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+var slideIndex2 = 1;
+showDivs2(slideIndex2);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+function plusDivs2(n) {
+  showDivs2(slideIndex2 += n);
 }
 
-function showDivs(n) {
+function showDivs2(n) {
   var i;
-  var x = document.getElementsByClassName("slidestwo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
+  var x = document.getElementsByClassName("slides2");
+  if (n > x.length) {slideIndex2 = 1}    
+  if (n < 1) {slideIndex2 = x.length}
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndex2-1].style.display = "block";  
 }
 </script>
 <!-- End of Carousel --> 
