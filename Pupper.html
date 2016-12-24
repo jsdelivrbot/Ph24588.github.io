@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Paul Hwang - Apple Music Redesign</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="favicon2-01.png"/>
+    <link rel="stylesheet" type="text/css" href="css/pupper.css"/>
+    
+    <link rel="stylesheet" href="css/gallery.theme.css">
+<link rel="stylesheet" href="css/gallery.min.css">
+</head>
+    <body>
+<div class="project">
+     
+<div class="backarrowcontainer">
+    <a href="index.html">
+        <img class="backarrow">
+        <h2>Back</h2>
+    </a>
+</div>
+    
+        <div class="bioa"><div class="center">
+            <h1>Pupper</h1>
+Have you ever wanted a dog, but without the responsibility of owning one? What if there was an app that let you rent one for a weekend, or even for an event? Pupper is an iOS application that allows you to do just that.
+        </div>
+    </div>
+    </div>
+
+<div class="biob"><div class="center"><h3>INSPIRATION</h3>
+    This year, I took a UX class at UGA, taught by <a href="http://mds.is" target="_blank">Matt Smith from MDS</a>. After going through his <a href="http://mds.is/aiux/" target="_blank">AIUX module</a>, we were tasked with creating an original app of our own design. Instead of running with a more serious idea, I decided to do something a bit more fun. A friend jokingly asked me to make an app for renting “good” dogs. I thought it was ridiculous and couldn’t seriously work… so why not make it for fun?
+    <br><br/>
+<h3>WHY THIS APP CAN'T EXIST</h3> Where do I even begin with this legal nightmare? What would happen if a dog ran away while in a customer's care, or if the dog accidentally bit someone, or if the dog got sick, or someone was recruiting for an underground dog fighting ring, or, god forbid, it died! When you pass around a living thing to a bunch of strangers, things are bound to go wrong.</div></div>
+        
+    <img class="project" src="css/images/pupperimg2-02.jpg">
+
+<div class="bio largeimagepadding">
+    <div class="center">
+<h3>Getting started</h3> After I ran through a few edge cases (read above paragraph), I started by stating my objective, use cases, scope, and any immediate notes:
+            <br><br/>
+<ul><div><b>Objective</b></div>
+How a user rents a dog
+People need dogs for various use cases (see below), from places with a surplus of dogs. Connect the dogs with the people who needs them, maybe even leading to adoption.</ul>
+            <br><br/>
+<ul><div><b>Scope of the project</b></div>
+How a user rents a dog</ul>
+            <br><br/>
+<ul>
+<b>Use cases</b>
+  <li>Dogs for general events, like parties, birthdays, weddings, picnics, etc.</li>
+  <li>Dogs for exercising/outdoor activity</li>
+  <li>Dogs for people in need of company</li>
+  <li>Dogs for PTSD (in the future)</li>
+</ul>
+            <br><br/>
+<ul>
+<b>Immediate notes</b>
+  <li>You can’t rent dogs every other day. It would need to be consecutive days, with a certain amount of time in between. Renting every other day would stress the dog and the handlers.</li>
+  <li>It’s like appliance rentals, but it’s dogs.</li>
+</ul>
+    </div></div>
+        
+    <img class="project" src="css/images/pupperimg2-01.jpg">
+
+<div class="bio largeimagepadding"><div class="center"><h3>Who would use this app?
+</h3>Before I began my user flows, I needed to figure out who would use the service. My use cases directed my personas to where they needed to go. My market would be made up of people who needed a companion to play with, whether it be parties, jogging, or just playing fetch with. My two personas are Sally Chang, the night jogger, and John Correll, the dad who wants dogs at his son’s party. <a href="https://docs.google.com/document/d/18053ICh8qvMbbj0Ch7u0VCxh6vDq8eFbpF4os2xegYs/edit?usp=sharing" target="_blank">You can read my in-depth user stories here</a>. (TL;DR in my userflows).
+        <br><br/>
+    <h3>How does the user "flow" through this app?</h3>Based off of my personas, I was able to come up with a list of features...
+        <br><br/>
+ <ul>
+  <li>See all dogs available</li>
+  <li>View and mark favorite dogs</li>
+  <li>Your profile</li>
+     <ul>
+         <li>your history rental history</li>
+         <li>edit your information</li>
+     </ul>
+   <li>Detail page for dogs</li>
+     <ul>
+         <li>When/how long to rent</li>
+         <li>Dog’s name</li>
+         <li>How much the rental is</li>
+         <li>Descriptions/characteristics</li>
+     </ul>
+   <li>Shopping cart/checkout</li>
+   <li>Searching for dogs</li>
+     <ul>
+         <li>Filter system</li>
+            <ul>
+                <li>Breed</li>
+                <li>Age group</li>
+                <li>Temperament</li>
+                <li>Activity</li>
+            </ul>
+     </ul>
+</ul>
+        <br><br/>
+...which turned into flows.
+</div></div>
+            
+<img class="project" src="css/images/amimg6.png">
+        
+<div class="bio largeimagepadding"><div class="center"><h3>Flows and sitemaps</h3>These user flows follow my personas’ decisions through the app to rent a dog. I wanted Pupper to be as straight forward as possible so you could rent a dog asap. Because of this, my user flows are similar to my site map because most of the screens you need to navigate to are the only ones available. This reduces clutter and makes for a streamlined process.</div></div>
+
+<!-- Start of Carousel -->
+<div class="gallery items-3">  
+    
+<img class="project slides" src="css/images/pupperimg4-01.jpg">
+<img class="project slides" src="css/images/pupperimg4-02.jpg">
+<img class="project slides" src="css/images/pupperimg4-03.jpg">
+
+<div class="controls left">
+    <a class="control-button" onclick="plusDivs(-1)">&#10094;</a>
+</div>
+    
+<div class="controls right">
+    <a class="control-button" onclick="plusDivs(1)">&#10095;</a>
+</div>
+    
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<!-- End of Carousel --> 
+        
+<div class="bio largeimagepadding"><div class="center"><h3>Finding the dog you want</h3>With my groundwork done, I started sketching out solutions for the dog rentals. I included the breed, cost, and name in each dog entry. To easily display this information, I went with a cell view for bites sized entries.
+<br><br/>
+Out of the three things I emphasized, the name sticks out like a sore thumb. Why would I emphasize something that wouldn’t really affect the dog’s quality? After all, the name is a bit arbitrary. Well, earlier I mentioned that “dog rentals” looked kinda sketchy. I didn’t want dogs to be objects, but individuals. To do this, I highly emphasized the name and the personality of each dog. 
+    <br><br/>
+    <h3>Who is this Dog?</h3>When you read into the details of a dog, you will see a few things: name, breed, cost, description, and three key characteristics: age group, activity level, and temperament. The filtering system is based off of these characteristics. These factors will be the differentiator between dogs.
+</div></div>
+        
+<!-- Start of Carousel -->
+<div class="gallery items-3">  
+    
+<img class="project slides2" src="css/images/pupperimg4-01.jpg">
+<img class="project slides2" src="css/images/pupperimg4-02.jpg">
+<img class="project slides2" src="css/images/pupperimg4-03.jpg">
+
+<div class="controls left">
+    <a class="control-button" onclick="plusDivs2(-1)">&#10094;</a>
+</div>
+    
+<div class="controls right">
+    <a class="control-button" onclick="plusDivs2(1)">&#10095;</a>
+</div>
+    
+</div>
+
+<script>
+var slideIndex2 = 1;
+showDivs2(slideIndex2);
+
+function plusDivs2(n) {
+  showDivs2(slideIndex2 += n);
+}
+
+function showDivs2(n) {
+  var i;
+  var x = document.getElementsByClassName("slides2");
+  if (n > x.length) {slideIndex2 = 1}    
+  if (n < 1) {slideIndex2 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex2-1].style.display = "block";  
+}
+</script>
+<!-- End of Carousel --> 
+        
+<div class="bio largeimagepadding"><div class="center"><h3>Shifiting wireframes</h3>My designs changed when transitioning into the wireframes (with more changes when transitioning to hifis), which was expected. A few notable changes from sketches to wires was filters, settings, date picking, and the layout of the details page. 
+    <br><br/>
+My initial design had a filter bar that you could flip through dog characteristic with. However, doing this created clutter and left no room for breed filtering. A separate filters page looked liked the best answer, which you’ll see in the hifis. 
+    <br><br/>
+The details page consists of 3 parts: dog information, date picker, and the ‘add to kennel’ button. The challenge here was properly compartmentalizing sections into groups of action. For example, descriptors would be grouped, then the calendar would be grouped separately, and so on. Each group would have information accompanied by icons (i.e. age groups, would have icons of dogs and the calendar would have the days). Before I fell too deep into the rabbit hole, I realized the grouping approach was too cluttering. I shifted my thinking into creating hierarchy for the content, leading to my current design. This relies more on typography and whitespace, making for a cleaner interface. 
+</div></div>
+        
+<img class="project" src="css/images/amimg6.png">
+        
+<div class="bio largeimagepadding"><div class="center"><h3>Look and feel</h3>I had to decide the look and feel of this app based off of the renter. Another message I wanted to convey with my interface was that each dog was a new adventure. That with your new friend, you could embark (pun intended) on a journey. To do this, I went with a “granola”, wanderlust aesthetic that would appeal to a younger audience. I also made sure that each dog looked just as excited as a user might be renting the dog. I wanted to emphasize imagery, white space, and typography throughout the UI. 
+
+</div></div>   
+        <div class="bioc">
+            <div class="center">
+                <iframe class="test" src="https://marvelapp.com/97afd76" width="330" height="640" frameborder="0" allowtransparency= "true"></iframe>
+                <div>As a dog lover, I wish that this app could be real one day. Hopefully, this idea will be pursued by someone willing to bear the legal burdens of this service… which if that sounds like you, let me know!
+                    <br><br/>
+A few things to note: 1) The prices in my designs are arbitrary. How much is renting a dog supposed to cost anyway? The right answer: dogs are priceless. 2) I would like the dogs to come from shelters, where they could be trained, cared for, and ultimately adopted. What would likely need happen is that a company would need to train dogs specifically for this app. 3) As bad as this sounds, lawn mower rentals were a big influence and it helped with design direction. 
+                    <br><br/>
+Feel free to click through the Prototype. 
+                </div>
+            </div>
+</div>
+<!-- -->
+<br/>
+</body>
+</html>
