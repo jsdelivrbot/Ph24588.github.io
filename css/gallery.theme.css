@@ -1,10 +1,8 @@
 .gallery .control-button {
-  color: #D4489A;
-  color: rgba(212, 72, 154, 0.4);
+  color: rgba(236, 0, 139, 0.4);
 }
 .gallery .control-button:hover {
-  color: #D4489A;
-  color: rgba(212, 72, 154, 0.8);
+  color: rgba(236, 0, 139, 0.8);
 }
 .gallery {
   position: relative;
