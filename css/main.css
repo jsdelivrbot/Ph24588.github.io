@@ -19,6 +19,7 @@ a {
     margin: 5em 3em 0 3em;
     background-color: #FFF;
     border: 1px solid #E9E9E9;
+    letter-spacing: .5px;
 }
 
 .main {
@@ -29,6 +30,7 @@ a {
     margin-right: auto;
     z-index: 5;
     padding-top: 1px;
+    letter-spacing: .5px;
 }
 
 .myface {
@@ -53,12 +55,17 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    line-height: 1.15em;
     transition: color 0.5s ease;
 }
 
 .midboldtext {
     margin-top: 5em;
     margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: .5px;
+    line-height: 2em;
 }
 
 .project {
