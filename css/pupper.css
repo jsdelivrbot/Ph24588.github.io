@@ -125,11 +125,11 @@ h1 {
 }
 
 .bio {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat-Light', sans-serif;
     font-size: 1em;
     position: relative;
     display: block;
-    padding: 0px 0px 75px 0px;
+    padding-bottom: 75px;
     text-align: left;
 	width: 100%;
     line-height: 1.5em;
