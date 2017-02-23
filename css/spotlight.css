@@ -26,10 +26,12 @@ p:hover {
 .fade {
 	left: 0;
 	width: auto;
-	margin-top: 45%;
+	margin-top: 200px;
+	margin-left: 17%;
+	width: 500px;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
-	position: relative;
+	position: absolute;
 	font-size: 1em;
 	color: lightgray;
 }
@@ -97,3 +99,6 @@ a:hover {
 	margin-left: 455px;
 }
 
+.hide {
+	
+}
