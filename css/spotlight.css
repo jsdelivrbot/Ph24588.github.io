@@ -33,7 +33,7 @@ p:hover {
 	font-family: 'Raleway', sans-serif;
 	position: absolute;
 	font-size: 1em;
-	color: lightgray;
+	color: gray;
 }
 
 .copy {
@@ -41,19 +41,19 @@ p:hover {
 	font-family: 'Raleway', sans-serif;
 	position: absolute;
 	font-size: 1em;
-	color: lightgray;
+	color: gray;
 	width: 500px;
 	text-align: center;
 	margin-left: 17%;
 }
 
 a {
-	color: lightgray;
+	color: gray;
 	text-decoration: none;
 }
 
 a:hover {
-		background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #FFAFBD), color-stop(1, #ffc3a0) );
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #FFAFBD), color-stop(1, #ffc3a0) );
     color:transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -97,8 +97,4 @@ a:hover {
 
 #t {
 	margin-left: 455px;
-}
-
-.hide {
-	
 }
