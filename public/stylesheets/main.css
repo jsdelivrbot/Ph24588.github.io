@@ -1,0 +1,317 @@
+.switch a:link,
+.switch a:visited {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 70px;
+  font-weight: 800;
+  font-size: 4em;
+  transform: skewY(-4deg);
+  transition: color .3s;
+  margin-left: 15%;
+  width: 500px;
+}
+
+.mediaIcons {
+  width: 40px;
+  top: 70px;
+  position: fixed;
+  display: inline;
+  margin-left: 90%;
+  opacity: .3;
+  transition: opacity .5s;
+}
+
+.mediaIcons:hover {
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+.about {
+  color: lightgrey;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.5em;
+  transform: rotateZ(-90deg);
+  top: 200px;
+  left: -90px;
+  position: fixed;
+  transition: color .3s;
+}
+
+.about:hover {
+  color: black;
+  transition: color .3s;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 a {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+  transition: color .3s;
+}
+
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: blue;
+    transition: width .3s;
+}
+
+a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+a::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: blue;
+    transition: width .3s;
+}
+
+a:hover::before {
+    width: 100%;
+    transition: width .3s;
+}
+
+a:active {
+  color: lightgrey;
+}
+
+.switch {
+  color: lightgrey;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.5em;
+  transform: rotateZ(-90deg);
+  top: 550px;
+  left: -75px;
+  position: fixed;
+  transition: color .3s;
+}
+
+.switch a {
+  width: 300px;
+  height: 10px;
+  display: block;
+}
+
+.switch:hover {
+  color: blue;
+  transition: color .3s;
+}
+
+.switch a:hover {
+  color: blue;
+  transition: color .3s;
+}
+
+.descriptionContainer {
+    top: 300px;
+    margin-left: 52%;
+    position: fixed;
+    display: block;
+    height: auto;
+    width: auto;
+}
+
+p {
+  transform: skewY(4deg);
+  color: blue;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.5em;
+  position: absolute;
+  width: 500px;
+  top: 65px;
+  left: 30px;
+}
+
+.descriptionDropdown {
+  color: blue;
+  width: 200px;
+  height: 300px;
+  background: white;
+  padding: 30px;
+  box-shadow: 1px 1px 5px .1px black;
+  transform: skewY(-4deg);
+  z-index: 2;
+  display: none;
+}
+
+.copyBorder {
+  z-index: -1;
+  width: 530px;
+  height: 332px;
+  position: absolute;
+}
+
+#borderImg {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: block;
+    z-index: -2;
+}
+
+#amazonImg, #appleImg, #pupperImg, #agioImg, #beatImg, #cooleafImg {
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  transform: scale(1.4,1.4);
+  display: none;
+}
+
+#projects {
+  margin-top: 6%;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  transition: transform 200ms ease;
+  display: none;
+}
+
+.arrow.active {
+  transform: rotateZ(180deg);
+}
+
+#amazonArrow {
+  top: 95px;
+  left: 395px;
+}
+
+#beatArrow {
+  top: 25px;
+  left: 370px;
+}
+
+#appleArrow {
+  top: 95px;
+  left: 295px;
+}
+
+#pupperArrow {
+  top: 25px;
+  left: 235px;
+}
+
+#agioArrow {
+  top: 25px;
+  left: 155px;
+}
+
+#ugahacksArrow {
+  top: 25px;
+  left: 355px;
+}
+
+#cooleafArrow {
+  top: 25px;
+  left: 160px;
+}
+
+@media (max-width: 970px) {
+  .descriptionContainer {
+    display: none;
+  }
+
+  #amazonImg, #appleImg, #pupperImg, #agioImg, #beatImg, #cooleafImg {
+    transform: scale(2,2);
+  }
+
+  .arrow {
+    display: block;
+  }
+
+  p {
+    transform: skewY(0deg);
+    color: blue;
+    font-size: 1.1em;
+    position: absolute;
+    width: 200px;
+    top: 65px;
+    left: 30px;
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 700px) {
+  #amazonImg, #appleImg, #pupperImg, #agioImg, #beatImg, #cooleafImg {
+    transform: scale(3,3);
+  }
+
+  #projects {
+    margin-top: 250px;
+  }
+
+  .switch {
+    font-size: 1.5em;
+    transform: rotateZ(0deg);
+    top: 180px;
+    left: 0;
+    margin-left: 18%;
+    position: absolute;
+  }
+
+  .about {
+    transform: rotateZ(0deg);
+    top: 100px;
+    left: 0;
+    margin-left: 18%;
+    position: absolute;
+  }
+
+  .mediaIcons {
+    width: 250px;
+    height: 50px;
+    top: 40px;
+    position: absolute;
+    display: inline;
+    margin-left: 15.5%;
+    }
+
+  .mediaIcons img {
+    position: relative;
+    display: inline;
+    width: 40px;
+    }
+
+  .mediaIcons a::before {
+    display: inline;
+    }
+
+  .mediaIcons a::after {
+    display: inline;
+    }
+
+  .cvIcon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 6px;
+    margin-left: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    }
+}
+
+@media (max-width: 465px) {
+  #amazonImg, #appleImg, #pupperImg, #agioImg, #beatImg, #cooleafImg {
+    transform: scale(4,4);
+  }
+}

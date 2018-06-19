@@ -1,0 +1,88 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 2.5em;
+	margin-left: 12%;
+	margin-top: 150px;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 2em;
+	margin-left: 12%;
+	margin-top: 150px;
+	color: white;
+}
+
+.back {
+	top: 50px;
+	left: 60px;
+	position: absolute;
+
+}
+
+.guide {
+	width: 4px;
+	height: 3500px;
+	background: rgba(230, 230, 230, 0.75);
+	position: absolute;
+	left: 65px;
+}
+
+.copyA {
+	width: 305px;
+	height: auto;
+	float: left;
+	margin-left: 12%;
+	margin-top: 65px;
+	line-height: 26px;
+}
+
+.copyB {
+	color: white;
+	margin-top: 0;
+}
+
+.mockup {
+	width: 528.7125px;
+	height: 439.875px;
+	position: relative;
+	margin-top: 10px;
+	margin-right: 100px;
+	float: right;
+}
+
+.background {
+	top: 600px;
+	left: 0;
+	width: 100%;
+	height: auto; 
+	display: block;
+	position: absolute;
+	z-index: -100;
+}
+
+.researchContainer {
+	top: 900px;
+	left: 12%;
+	width: 450px;
+	height: 1050px;
+	display: block;
+	position: absolute;
+}
+
+.research {
+	width: 450px;
+	height: 300px;
+	box-shadow: 2px 3px 10px black;
+}
+
+.copyBContainer {
+	position: absolute;
+	display: block;
+	top: 800px;
+	left: 300px;
+}

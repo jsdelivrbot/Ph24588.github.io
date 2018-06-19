@@ -1,0 +1,460 @@
+* {
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+#wrapper {
+	position: relative;
+	margin: auto;
+	max-width: 1440px;
+}
+
+body {
+	margin:0;
+	overflow-x: hidden;
+/*	max-width: 1440px;*/
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 2.5em;
+	margin-left: 12%;
+	margin-top: 150px;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 2em;
+	margin-left: 12%;
+	margin-top: 75px;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color:blue;
+}
+
+.back {
+	top: 50px;
+	left: 35px;
+	position: fixed;
+	background: blue;
+	padding: 15px 15px 10px 15px;
+	border-radius: 100px;
+	color: white;
+	text-decoration: none;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+	z-index: 100;
+}
+
+.back img {
+	width: 20px;
+	height: auto;
+}
+
+.copyA {
+	width: 305px;
+	height: auto;
+	float: left;
+	margin-left: 12%;
+	margin-top: 65px;
+	line-height: 26px;
+}
+
+.copyB {
+	width: 305px;
+	height: auto;
+	float: left;
+	margin-left: 12%;
+	margin-top: 65px;
+	line-height: 26px;
+	color: white;
+	margin-top: 0;
+}
+
+.mockup {
+	width: 600px;
+	height: auto;
+	position: relative;
+	margin-right: 100px;
+	float: right;
+	opacity: 0;
+	margin-bottom: -325px;
+	margin-top: -175px;
+}
+
+.background {
+	left: 0;
+	width: 100%;
+	height: auto; 
+	display: block;
+	position: absolute;
+	z-index: -100;
+}
+
+#bg_1 {
+	top: 600px;
+}
+
+.copyBContainer {
+	position: fixed;
+	display: block;
+	top: 0px;
+	left: 700px;
+	margin-top: 10px;
+	width: auto;
+	z-index: -1;
+}
+
+.researchContainer {
+	top: 900px;
+	left: 12%;
+	width: 450px;
+	height: 1050px;
+	display: block;
+	position: absolute;
+}
+
+.research {
+	width: 450px;
+	height: 300px;
+	box-shadow: 2px 3px 10px black;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.largeWireframeContainer {
+	top: 2300px;
+	left: 12%;
+	width: 100%;
+	height: 2000px;
+	display: block;
+	position: absolute;
+}
+
+.wireframeContainer {
+	width: 80%;
+	height: 450px;
+	display: block;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.wireframe {
+	position: relative;
+	display: block;
+	width: 650px;
+	box-shadow: 2px 3px 10px black;
+	float: right;
+	height: auto;
+	margin-bottom: 50px;
+}
+
+.copyC {
+	width: 305px;
+	height: auto;
+	margin-top: 0;
+	line-height: 26px;
+	color: black;
+	position: relative;
+	margin-right: 48px;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.wideContainer {
+	top: 4450px;
+	width: 100%;
+	height: 500px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: block;
+	position: absolute;
+}
+
+.finalMockup {
+	width: 600px;
+	margin-right: -100px;
+	height: auto;
+	position: relative;
+	display: inline-block;
+}
+
+.wideContainer::-webkit-scrollbar { 
+    display: none; 
+}
+
+.copyDContainer {
+	top: 4890px;
+	left: 12%;
+	width: auto;
+	height: 100px;
+	display: block;
+	position: absolute;
+}
+
+.copyD {
+	width: 305px;
+	height: auto;
+	margin-top: 0;
+	line-height: 26px;
+	color: white;
+	position: relative;
+	margin-right: 48px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+.button {
+	width: 250px;
+	height:50px;
+	background:blue;
+	display: inline-block;
+	position: relative;
+	border-radius: 100px;
+	margin-left: -10px;
+	text-align:center;
+	box-shadow:2px 3px 10px black;
+	cursor: pointer;
+}
+
+.buttonText {
+	width:100%;
+	height:auto;
+	margin-top:14px;
+	color:white;
+	font-size:1em;
+}
+
+.lightBox {
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5); 
+	z-index: 1;
+	position: fixed;
+	cursor: alias;
+}
+
+.prototype {
+	z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+   	justify-content: center;
+}
+
+.prototype > * {
+	flex: 1;
+	transform: scale(0.7);
+	margin-top: -50px;
+}
+
+.mobilePrototype {
+	max-width: 452px;
+}
+
+.x {
+	font-size: 2em;
+	color: white;
+	float: right;
+	margin-right: 35px;
+	margin-top: 50px;
+}
+
+.dragMe {
+	cursor: -webkit-grab;
+}
+
+@media (min-width: 1440px) {
+	.copyBContainer {
+		left: unset;
+		right: calc((100vw - 720px)/2 - 150px);
+	}
+}
+
+@media (max-width: 1270px) {
+	.background{
+		width: 1300px;
+	}
+
+	.wireframe {
+		width: 450px;
+	}
+}
+
+@media (max-width: 1143px) and (min-width: 879px) {
+	.mockup {
+		margin-right: -15%;
+	}
+
+	.copyBContainer {
+		left: 600px;
+	}
+}
+
+@media (max-width: 985px) {
+	#bg_1 {
+		width: 1400px;
+	}
+
+	.copyBContainer {
+		left: 12%;
+		width: 900px;
+		top: 300px;
+	}
+
+	.copyB {
+		margin-left: 0;
+	}
+
+	#copyB_left {
+		margin-right: 30px;	
+	}
+
+	h2 {
+		margin-left: 0;
+	}
+
+	.researchContainer {
+		top: 1100px;
+	}
+
+	.copyBContainer {
+		position: absolute;
+		top: 650px;
+		width: 80%;
+	}
+}
+
+@media (max-width: 799px) {
+	#bg_1 {
+		width: 1550px;
+	}
+
+	.researchContainer {
+		top: 1350px;
+	}
+
+	.largeWireframeContainer {
+		top: 2500px;
+		left: 12%;
+		width: 100%;
+		height: 2000px;
+		display: block;
+		position: absolute;
+	}
+
+	.wideContainer {
+		top: 4750px;
+	}
+
+	.copyDContainer {
+		top: 5190px;
+	}
+}
+
+@media (max-width: 878px) and (min-width: 708px) {
+	.mockup {
+		margin-right: -42%;
+	}
+}
+
+@media (max-width: 707px) and (min-width: 612px) {
+	.mockup {
+		margin-right: -60%;
+	}
+}
+
+@media (max-width: 611px) {
+	.mockup {
+		display: none;
+	}
+}
+
+@media (max-width: 550px) {
+	.researchContainer {
+		width: 100%;
+		height: auto;
+	}
+
+	.research {
+		width: 80%;
+		height: auto;
+	}
+
+	.wireframe {
+		width: 100%;
+	}
+}
+
+@media (max-width: 375px) {
+	.researchContainer {
+		top: 1440px;
+	}
+	.copyA {
+		width: 85%;
+	}
+	.copyB {
+		width: 95%;
+	}
+	.copyC {
+		width: 95%;
+	}
+	.copyD {
+		width: 93%;
+	}
+}
+
+.images img {
+	margin-bottom: 25px;
+}
+
+#lastGradient {
+	position: absolute;
+    top: 4200px;
+    bottom: 0;
+    width: 100%;
+    background: url(/gradient2.svg) no-repeat;
+    min-height: 1050px;
+    display: block;
+    content: "foo";
+    background-size: cover;
+    padding-bottom: 200px;
+}
+
+@media (max-width: 1003px) {
+	#lastGradient {
+		max-height: 1750px;
+		top: 4500px;
+	}
+
+	.wideContainer {
+		top: 4700px;
+	}
+
+	.copyDContainer {
+		top: 5150px;
+	}
+
+	.wireframe{
+		float: left;
+	}
+}
+
+@media (max-width: 802px) {
+	#lastGradient {
+		padding-bottom: 400px;
+	}
+}
+
+.finalMockup {
+	margin-left: 40px;
+	max-width: 100%;
+}

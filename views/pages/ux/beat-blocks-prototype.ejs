@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beatblocks Prototype</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style type="text/css">
+		#bb-table {
+			display: block;
+			position: relative;
+			min-height: 100vh;
+		}
+
+		#bb-table-center {
+			position: fixed;
+			top: 30%;
+			right: 30%;
+			left: 30%;
+			bottom: 30%;
+			background: #000;
+			opacity: 0.5;
+			border-radius: 100%;
+			box-shadow: 0px 0px 20px 20px #000;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+
+		#bb-table-center:after {
+			content: "Drop your blocks here to play them!";
+			font-family: Roboto;
+			font-size: 1.5em;
+			color: #FFF;
+		}
+
+		#left {
+			position: fixed;
+			top: 25%;
+			left: 20px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		#right {
+			position: fixed;
+			top: 25%;
+			right: 20px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		#top {
+			position: fixed;
+			top: 50px;
+			left: calc(50% - 880px);
+			right: calc(50% - 880px);
+			margin: auto;
+			display: flex;
+			max-width: 880px;
+		}
+
+		#bottom {
+			position: fixed;
+			bottom: 50px;
+			left: calc(50% - 880px);
+			right: calc(50% - 880px);
+			margin: auto;
+			display: flex;
+			max-width: 880px;
+		}
+
+		#bb-table .shape {
+			width: 200px;
+			height: 60px;
+
+			border-radius: 5px;
+
+			display: flex;
+			align-items: center;
+			text-align: center;
+
+			margin: 10px;
+		}
+
+		.shape {
+		    cursor: move;
+		    cursor: grab;
+		    cursor: -moz-grab;
+		    cursor: -webkit-grab;
+		}
+
+		.shape:active { 
+		    cursor: grabbing;
+		    cursor: -moz-grabbing;
+		    cursor: -webkit-grabbing;
+		}
+
+		#bb-table div:after {
+			flex: 1;
+		}
+
+		.shape::after {
+			box-sizing: border-box;
+			height: 100%;
+		}
+
+		.triangle:after {
+			background: url(/beatblocks/assets/shapes/triangle.svg) no-repeat;
+			content: "";
+		}
+
+		.square:after {
+			background: url(/beatblocks/assets/shapes/square.svg) no-repeat;
+			content: "";
+		}
+
+		.pentagon:after {
+			background: url(/beatblocks/assets/shapes/pentagon.svg) no-repeat;
+			content: "";
+		}
+
+		.circle:after {
+			background: url(/beatblocks/assets/shapes/circle.svg) no-repeat;
+			content: "";
+		}
+
+		.blue {
+			background: #0092d3;
+		}
+		
+		.purple {
+			background: #896ac6;
+		}
+		
+		.orange {
+			background: #ff9124;
+		}
+		
+		.pink {
+			background: #d90075;
+		}
+	</style>
+</head>
+<body>
+	<section id="bb-table">
+		<div id="bb-table-center"></div>
+		<div id="left"></div>
+		<div id="right"></div>
+		<div id="top"></div>
+		<div id="bottom"></div>
+	</section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.9/howler.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+	<script src="/js/beatblocks-prototype.js"></script>
+</body>
+</html>
